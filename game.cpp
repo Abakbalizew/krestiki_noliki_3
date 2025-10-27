@@ -154,5 +154,43 @@ int game() {
   while(turn() == 0) {
     n = n;
   }
+  if (win == 1){
+    std::cout << "Победили Нолики" << std::endl;// << "Если хотите рестартнуть игру, набери \"10\""<< std::endl;
+    // int res = 0;
+    // std::cin >> res;
+    // if (res == 10){
+    //   a1 = a2 = a3 = a4 = a5 = a6 = a7 = a8 = a9 = 0;
+    //   n = 0;
+    //   print();
+    //   game();
+    // }
+    // else {
+    //   std::cout << "КОНЕЦ ИГРЫ";
+    //   return 0;
+    // }
+    //return 0;
+}
+  else if (win == -1){
+    std::cout << "Победили Крестики" << std::endl;// << "Если хотите рестартнуть игру, набери \"10\""<< std::endl;;
+    // int res = 0;
+    // std::cin >> res;
+    // if (res == 10){
+    //   a1 = a2 = a3 = a4 = a5 = a6 = a7 = a8 = a9 = 0;
+    //   n = 0;
+    //   print();
+    //   game();
+    // }
+    // else {
+    //   std::cout << "КОНЕЦ ИГРЫ";
+    //   return 0;
+    // }
+  }
 }
 
+int start() {
+  using namespace std;
+  cout << "Обращаться к ячейкам по следующей закономерности:" << endl;
+  cout << "1 2 3" << endl << "4 5 6" << endl << "7 8 9" << endl;
+  game();
+  return 0;
+}
